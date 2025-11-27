@@ -16,7 +16,7 @@ import sys
 # CONFIGURATION
 # ==========================================
 # Use Top 50 to keep run-time under control for GitHub Actions
-PAIRS_TO_SCAN = 100 
+PAIRS_TO_SCAN = 200 
 TIMEFRAMES = ['4h'] 
 ERR_TOLERANCE = 0.10
 WEBHOOK_URL = os.environ.get('DISCORD_WEBHOOK_URL')
