@@ -1,9 +1,9 @@
 name: 15 mins Harmonic Scanner
 
 on:
-  schedule:
-    # Runs every 30 minutes
-    - cron: '*/15 * * * *'
+  # schedule:
+  #   # Runs every 30 minutes
+  #   - cron: '*/15 * * * *'
   workflow_dispatch: # Allows you to run it manually from the Actions tab for testing
 
 jobs:
