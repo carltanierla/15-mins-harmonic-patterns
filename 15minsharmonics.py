@@ -12,7 +12,7 @@ import json
 # -----------------------------------------------------------------------------
 TIMEFRAMES = ['15m']
 ERR_ALLOWED = 0.07
-TOP_N_PAIRS = 80  # Reduced slightly to speed up 30m run
+TOP_N_PAIRS = 200  # Reduced slightly to speed up 30m run
 SL_BUFFER   = 0.002
 
 # Get Webhook from GitHub Secrets (Environment Variable)
@@ -155,3 +155,4 @@ if __name__ == "__main__":
                         
 
             time.sleep(0.1) # Rate limit
+
