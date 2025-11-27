@@ -1,4 +1,4 @@
-name: Crypto Harmonic Scanner
+name: 4h Harmonic Scanner
 
 on:
   schedule:
