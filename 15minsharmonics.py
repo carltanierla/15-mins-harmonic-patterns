@@ -10,7 +10,7 @@ import json
 # -----------------------------------------------------------------------------
 # CONFIGURATION
 # -----------------------------------------------------------------------------
-TIMEFRAMES = ['15m', '30m', '1h', '4h']
+TIMEFRAMES = ['15m']
 ERR_ALLOWED = 0.07
 TOP_N_PAIRS = 80  # Reduced slightly to speed up 30m run
 SL_BUFFER   = 0.002
@@ -153,4 +153,5 @@ if __name__ == "__main__":
                         # SEND TO DISCORD
                         send_discord_alert(symbol, tf, name, direction, entry_price, sl, tp1, tp2)
                         
+
             time.sleep(0.1) # Rate limit
