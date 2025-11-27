@@ -27,5 +27,5 @@ jobs:
 
     - name: Run Scanner
       env:
-        DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL_4H }}
       run: python 4hrharmonics.py
