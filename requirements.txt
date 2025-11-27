@@ -2,4 +2,5 @@ ccxt
 pandas
 numpy
 scipy
-requests
+matplotlib
+discord-webhook
