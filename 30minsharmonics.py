@@ -19,10 +19,10 @@ import sys
 PAIRS_TO_SCAN = 100 
 TIMEFRAMES = ['30m'] 
 ERR_TOLERANCE = 0.10
-WEBHOOK_URL = os.environ.get('DISCORD_WEBHOOK_URL')
+WEBHOOK_URL = os.environ.get('DISCORD_WEBHOOK_URL_15M')
 
 if not WEBHOOK_URL:
-    print("❌ Error: DISCORD_WEBHOOK_URL not found in environment variables.")
+    print("❌ Error: DISCORD_WEBHOOK_URL_15M not found in environment variables.")
     sys.exit(1)
 
 # ==========================================
