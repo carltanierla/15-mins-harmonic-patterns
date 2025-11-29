@@ -1,30 +1,30 @@
-name: 15 mins Harmonic Scanner
+# name: 15 mins Harmonic Scanner
 
-on:
-  # schedule:
-  #   # Runs every 30 minutes
-  #   - cron: '*/15 * * * *'
-  workflow_dispatch: # Allows you to run it manually from the Actions tab for testing
+# on:
+#   # schedule:
+#   #   # Runs every 30 minutes
+#   #   - cron: '*/15 * * * *'
+#   workflow_dispatch: # Allows you to run it manually from the Actions tab for testing
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.9'
+#       - name: Set up Python
+#         uses: actions/setup-python@v4
+#         with:
+#           python-version: '3.9'
 
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
+#       - name: Install dependencies
+#         run: |
+#           pip install -r requirements.txt
 
-      - name: Run Screener
-        env:
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-        run: |
-          python 15minsharmonics.py
+#       - name: Run Screener
+#         env:
+#           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+#         run: |
+#           python 15minsharmonics.py
